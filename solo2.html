@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="solo2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container-main">
+
+        <h1>Generate <br><span class="color-text">a random password</span></h1>
+        <h3>Never use an insecure password again.</h3>
+
+        <div class="slider_main">
+            <input type="range" value="8" min="4" max="16" class="slider"
+                oninput="this.nextElementSibling.value = this.value" id="slider">
+            <output>8</output>
+        </div>
+
+        <label class="container">Include special characters
+            <input type="checkbox" checked="checked" id="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+
+        <button id="generate" class="action-btn">
+            <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.3006 1.04627C11.7169 1.17749 12 1.56354 12 2.00001V7.00001L16 7.00001C16.3729 7.00001 16.7148 7.20747 16.887 7.5382C17.0592 7.86893 17.0331 8.268 16.8192 8.57347L9.81924 18.5735C9.56894 18.931 9.11564 19.085 8.69936 18.9537C8.28309 18.8225 8 18.4365 8 18L8 13H4C3.62713 13 3.28522 12.7926 3.11302 12.4618C2.94083 12.1311 2.96694 11.732 3.18077 11.4265L10.1808 1.42655C10.4311 1.06898 10.8844 0.915053 11.3006 1.04627Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <span>Generate passwords</span>
+        </button>
+
+
+        <div class="wrapper-pass">
+            
+            <!-- 1 password -->
+
+            <div class="wrapper_main">
+                <h5 id="pwd_txt"></h5>
+                <button id="clipboard" class="clipboard">
+                    <i class="fas fa-clipboard"></i>
+                </button>
+            </div>
+
+            <!-- 2 password -->
+
+
+            <div class="wrapper_main">
+                <h5 id="pwd_txt2"></h5>
+                <button id="clipboard2" class="clipboard2">
+                    <i class="fas fa-clipboard"></i>
+                </button>
+            </div>
+
+            <!-- 3 password -->
+
+            <div class="wrapper_main">
+                <h5 id="pwd_txt3"></h5>
+                <button id="clipboard3" class="clipboard3">
+                    <i class="fas fa-clipboard3"></i>
+                </button>
+            </div>
+
+            <!-- 4 password -->
+
+            <div class="wrapper_main">
+                <h5 id="pwd_txt4"></h5>
+                <button id="clipboard4" class="clipboard4">
+                    <i class="fas fa-clipboard4"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="solo2.js"></script>
+
+
+
+
+</body>
+
+</html>
